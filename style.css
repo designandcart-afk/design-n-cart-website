@@ -6,17 +6,17 @@
 
 :root {
     /* Brand Colors */
-    --primary-color: #d16b55;   /* Your Brand's Red-Orange */
-    --primary-hover: #b95b49;   /* A darker version for hover */
-    --secondary-color: #2e2e2e;  /* Your Brand's Dark Gray */
-    --bg-color: #f2f0ed;         /* Your Brand's Off-White Background */
-    --section-alt-bg: #fbfaf9;   /* A new, very light alternate background */
+    --primary-color: #d96857;   /* Warm Terracotta - Creativity & Warmth */
+    --primary-hover: #c25847;   /* Darker terracotta for hover */
+    --secondary-color: #2e2e2e;  /* Charcoal - Professionalism & Depth */
+    --bg-color: #f2f0ed;         /* Soft Neutral - Calm, Premium Feel */
+    --section-alt-bg: #fbfaf9;   /* Very light alternate background */
     --surface-color: #ffffff;   /* White for cards */
-    --line-color: #E6E4E1; /* For soft dividers */
+    --line-color: #E6E4E1; /* Soft dividers */
 
     /* Fonts */
-    --font-primary: 'Poppins', sans-serif;
-    --font-secondary: 'Lora', serif; /* For elegant headings */
+    --font-primary: 'Poppins', sans-serif; /* Modern sans-serif for clarity */
+    --font-secondary: 'Lora', serif; /* Elegant serif accents for design credibility */
 }
 
 * {
