@@ -342,6 +342,11 @@ nav {
     gap: 1.5rem;
 }
 
+.how-it-works-home {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
 /* --- 7. Generic Content Sections --- */
 .feature-grid {
     display: grid;
