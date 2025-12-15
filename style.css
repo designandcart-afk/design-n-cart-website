@@ -349,20 +349,44 @@ nav {
 
 /* Workflow Steps Design */
 .workflow-steps {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.workflow-steps::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--primary-color), transparent);
+    opacity: 0.2;
+}
+
+.workflow-steps::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--primary-color), transparent);
+    opacity: 0.2;
 }
 
 .workflow-step {
     background: var(--surface-color);
     border-radius: 16px;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 3rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     text-align: center;
     position: relative;
     transition: all 0.3s ease;
+    border: 1px solid rgba(209, 107, 85, 0.1);
 }
 
 .workflow-step:hover {
