@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Design & Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-main.png" alt="Design & Cart Logo"></a>
+            </div>
+            <ul class="menu-list">
+                <li class="close-menu-btn-container">
+                    <button class="close-menu-btn" aria-label="Close navigation menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html" class="active">How It Works</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-spacer">
+                <a href="https://design-cart.vercel.app/" target="_blank" class="nav-launch-btn" style="background: var(--primary-color); color: white; padding: 0.5rem 1.2rem; font-size: 0.875rem; border-radius: 6px; text-decoration: none; font-weight: 500; font-family: 'Poppins', sans-serif; transition: all 0.3s ease; display: inline-block; margin-right: 1rem;">Launch App</a>
+                <button class="hamburger-menu" aria-label="Open navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #faf8f6 0%, #f2f0ed 100%); padding: 3.5rem 0 2.5rem 0;">
+            <div class="container text-center">
+                <h1 style="font-size: 2.75rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--secondary-color);">From Vision to Reality in 6 Simple Steps</h1>
+                <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">The complete workflow that eliminates chaos and connects your designs to real, purchasable products</p>
+            </div>
+        </section>
+
+        <!-- Workflow Cards -->
+        <section style="padding: 3rem 0 2rem 0; background: white;">
+            <div class="container" style="max-width: 1200px;">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem 4rem; row-gap: 3.5rem; position: relative;">
+                    
+                    <!-- Step 1 -->
+                    <div style="background: var(--surface-color); border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-soft); border: 1px solid var(--line-color); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), #e07766); color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin-bottom: 1.5rem; box-shadow: 0 8px 16px rgba(217, 104, 87, 0.25);">1</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--secondary-color);">Create Your Project</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">Set up your client's workspace. Add rooms, upload floor plans, mood boards, and references. Everything organized in one hub.</p>
+                        <!-- Arrow -->
+                        <div style="position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); font-size: 2rem; color: var(--primary-color); z-index: 10;"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div style="background: var(--surface-color); border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-soft); border: 1px solid var(--line-color); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), #e07766); color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin-bottom: 1.5rem; box-shadow: 0 8px 16px rgba(217, 104, 87, 0.25);">2</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--secondary-color);">Select Real Products</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">Browse our curated catalog and select actual, purchasable products BEFORE rendering. Every item is real, available, and ready to buy.</p>
+                        <!-- Arrow -->
+                        <div style="position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); font-size: 2rem; color: var(--primary-color); z-index: 10;"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div style="background: var(--surface-color); border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-soft); border: 1px solid var(--line-color); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), #e07766); color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin-bottom: 1.5rem; box-shadow: 0 8px 16px rgba(217, 104, 87, 0.25);">3</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--secondary-color);">Get 3D Renders</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">Our professional team creates photorealistic renders using the EXACT products you chose. Preview first, then get finals.</p>
+                        <!-- Arrow Down -->
+                        <div style="position: absolute; bottom: -2rem; left: 50%; transform: translateX(-50%); font-size: 2rem; color: var(--primary-color); z-index: 10;"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div style="background: var(--surface-color); border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-soft); border: 1px solid var(--line-color); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; grid-column: 3; grid-row: 2;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), #e07766); color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin-bottom: 1.5rem; box-shadow: 0 8px 16px rgba(217, 104, 87, 0.25);">4</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--secondary-color);">Review & Approve</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">Review renders, provide feedback via project chat, and approve designs. Clear workflow: WIP → Shared → Approved. Everything documented.</p>
+                        <!-- Arrow Left -->
+                        <div style="position: absolute; top: 50%; left: -2rem; transform: translateY(-50%); font-size: 2rem; color: var(--primary-color); z-index: 10;"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div style="background: var(--surface-color); border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-soft); border: 1px solid var(--line-color); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; grid-column: 2; grid-row: 2;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), #e07766); color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin-bottom: 1.5rem; box-shadow: 0 8px 16px rgba(217, 104, 87, 0.25);">5</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--secondary-color);">Add to Cart & Order</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">Once approved, products move to your cart. Process payments via Razorpay, generate invoices, and place orders—all in one platform.</p>
+                        <!-- Arrow Left -->
+                        <div style="position: absolute; top: 50%; left: -2rem; transform: translateY(-50%); font-size: 2rem; color: var(--primary-color); z-index: 10;"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div style="background: var(--surface-color); border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-soft); border: 1px solid var(--line-color); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; grid-column: 1; grid-row: 2;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), #e07766); color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin-bottom: 1.5rem; box-shadow: 0 8px 16px rgba(217, 104, 87, 0.25);">6</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--secondary-color);">Track & Deliver</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">Track order status in real-time: Placed → Shipped → Delivered. Get tracking IDs, estimated dates, and updates. Complete transparency.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Demo Section -->
+        <section style="padding: 3rem 0; background: var(--section-alt-bg);">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 2rem;">
+                    <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem;">See It In Action</h2>
+                    <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 600px; margin: 0 auto;">Watch how Design&Cart simplifies your entire workflow from concept to delivery</p>
+                </div>
+                <div style="max-width: 1000px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); aspect-ratio: 16/9;">
+                    <video playsinline autoplay muted loop controls src="videos/workflow-demo.mp4" poster="images/living.jpg" style="width: 100%; height: 100%; display: block; object-fit: cover;"></video>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="padding: 3rem 0; text-align: center;">
+            <div class="container">
+                <h2>Ready to Experience the Difference?</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem auto;">Join designers who are creating shoppable, executable projects</p>
+                <div class="button-group" style="justify-content: center;">
+                    <a href="https://design-cart.vercel.app/" target="_blank" class="btn">Launch App Now</a>
+                    <a href="features.html" class="btn btn-secondary">See All Features</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1.5fr 1fr; gap: 3rem;">
+                <div class="footer-col">
+                    <img src="images/logo-main.png" alt="Design & Cart Logo" class="footer-logo" style="max-width: 180px; margin-bottom: 1.5rem;">
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">The all-in-one workspace for interior designers, simplifying the journey from 3D concept to final delivery.</p>
+                    <div class="footer-social" style="margin-top: 1.5rem;">
+                        <a href="https://www.linkedin.com/company/designandcart" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5 style="font-size: 1rem; margin-bottom: 1.25rem; color: var(--secondary-color); font-weight: 600;">Quick Links</h5>
+                    <ul class="footer-links" style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.75rem;"><a href="index.html" style="color: var(--text-muted); transition: color 0.2s;">Home</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="how-it-works.html" style="color: var(--text-muted); transition: color 0.2s;">How It Works</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="features.html" style="color: var(--text-muted); transition: color 0.2s;">Features</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="contact.html" style="color: var(--text-muted); transition: color 0.2s;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5 style="font-size: 1rem; margin-bottom: 1.25rem; color: var(--secondary-color); font-weight: 600;">Get in Touch</h5>
+                    <div class="footer-contact" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">General Inquiries</p>
+                            <p style="margin: 0;"><a href="mailto:contact@designandcart.in" style="color: var(--primary-color); font-weight: 500;">contact@designandcart.in</a></p>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">Partnerships</p>
+                            <p style="margin: 0;"><a href="mailto:partners@designandcart.in" style="color: var(--primary-color); font-weight: 500;">partners@designandcart.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5 style="font-size: 1rem; margin-bottom: 1.25rem; color: var(--secondary-color); font-weight: 600; text-align: center;">Ready to Start?</h5>
+                    <a href="https://design-cart.vercel.app/" target="_blank" class="btn" style="display: block; text-align: center; padding: 1rem 2rem; font-size: 1rem; border-radius: 50px; background: var(--primary-color); color: white; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Launch App</a>
+                </div>
+            </div>
+            <div class="footer-bottom" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line-color); text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.875rem;">&copy; 2025 Design & Cart. Built for the modern interior designer.</p>
+                <p style="color: var(--text-muted); font-size: 0.75rem; margin-top: 1rem; line-height: 1.5; max-width: 900px; margin-left: auto; margin-right: auto;">* Some features and functionality shown on this website are currently in development or planned for future release. Descriptions represent our product roadmap and vision. Actual features, availability, pricing, and implementation may vary. Design & Cart reserves the right to modify or discontinue features at any time without prior notice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

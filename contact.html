@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact - Design & Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-main.png" alt="Design & Cart Logo"></a>
+            </div>
+            <ul class="menu-list">
+                <li class="close-menu-btn-container">
+                    <button class="close-menu-btn" aria-label="Close navigation menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-spacer">
+                <a href="https://design-cart.vercel.app/" target="_blank" class="nav-launch-btn" style="background: var(--primary-color); color: white; padding: 0.5rem 1.2rem; font-size: 0.875rem; border-radius: 6px; text-decoration: none; font-weight: 500; font-family: 'Poppins', sans-serif; transition: all 0.3s ease; display: inline-block; margin-right: 1rem;">Launch App</a>
+                <button class="hamburger-menu" aria-label="Open navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Us Section -->
+        <section class="about-intro">
+            <div class="container two-column-layout">
+                <div class="col-left">
+                    <h2>Why We Built Design&Cart</h2>
+                    <p>Interior designers are incredibly creative professionals who deserve tools that amplify their vision, not complicate it. Yet the industry forces them to juggle disconnected systems—design software, vendor spreadsheets, WhatsApp approvals, and manual sourcing.</p>
+                    <p>We built Design&Cart to eliminate this chaos. One platform where designs connect to real products, 3D renders match reality, and projects flow seamlessly from concept to delivery.</p>
+                </div>
+                <div class="col-right">
+                    <img src="images/Aboutus1.jpg" alt="Designer workspace with sketches and materials">
+                </div>
+            </div>
+        </section>
+
+        <section class="designer-focused-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Built for Modern Designers</h2>
+                    <p class="section-subheading">You handle the vision. We handle the logistics.</p>
+                </div>
+
+                <div class="two-column-layout" style="margin-top: 3rem;">
+                    <div class="col-left">
+                        <div class="struggles-box">
+                            <h4>The Old Way</h4>
+                            <ul class="struggles-list">
+                                <li>Chasing vendors for product details</li>
+                                <li>Juggling spreadsheets, emails, and CAD files</li>
+                                <li>Clients confused by technical drawings</li>
+                                <li>Endless back-and-forth for approvals</li>
+                                <li>Wasting hours on purchase orders</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="solution-box">
+                            <h4>The Design&Cart Way</h4>
+                            <ul class="solution-list">
+                                <li>Curated library of real, sourceable products</li>
+                                <li>One platform for visuals, products, and clients</li>
+                                <li>Stunning 3D renders that sell your vision</li>
+                                <li>Centralized feedback and one-click approvals</li>
+                                <li>Seamless ordering and delivery tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-main-grid">
+                    <!-- Left: Contact Info -->
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <p>Have a question or want to partner with us? We'd love to hear from you.</p>
+
+                        <h4>General Inquiries</h4>
+                        <p><a href="mailto:contact@designandcart.in">contact@designandcart.in</a></p>
+
+                        <h4>Partnerships</h4>
+                        <p><a href="mailto:partners@designandcart.in">partners@designandcart.in</a></p>
+                        
+                        <h4>Follow Our Journey</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/designandcart" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact & Feedback Form -->
+                    <div class="early-access-form">
+                        <h2>Let's Connect</h2>
+                        <p class="subtext">Whether you're a designer looking to streamline your workflow or a vendor interested in partnering with us, we'd love to hear from you.</p>
+                        
+                        <form id="multi-step-form" novalidate>
+                            <!-- Step 1: Common Questions -->
+                            <div class="form-step active-step">
+                                <p class="step-indicator">Step 1 of 2: About You</p>
+                                <div class="form-group">
+                                    <label for="full-name">Full Name</label>
+                                    <input type="text" id="full-name" name="Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number / WhatsApp</label>
+                                    <input type="tel" id="phone" name="Phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="City" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Which best describes you?</label>
+                                    <div class="radio-group">
+                                        <label><input type="radio" name="Role" value="Designer" required><span class="radio-text">Interior Designer / Studio</span></label>
+                                        <label><input type="radio" name="Role" value="Vendor"><span class="radio-text">Vendor / Brand / Supplier</span></label>
+                                        <label><input type="radio" name="Role" value="Other"><span class="radio-text">Other</span></label>
+                                    </div>
+                                </div>
+                                <div class="form-navigation">
+                                    <button type="button" class="btn next-btn">Next →</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Conditional Questions -->
+                            <div class="form-step">
+                                <p class="step-indicator">Step 2 of 2: A Few More Details</p>
+
+                                <!-- Questions for Designers -->
+                                <div id="designer-questions" class="conditional-group">
+                                    <div class="form-group">
+                                        <label>How many design projects do you typically handle per year?</label>
+                                        <div class="radio-group">
+                                            <label><input type="radio" name="Designer - Project Volume" value="1-5"><span class="radio-text">1–5</span></label>
+                                            <label><input type="radio" name="Designer - Project Volume" value="6-15"><span class="radio-text">6–15</span></label>
+                                            <label><input type="radio" name="Designer - Project Volume" value="16+"><span class="radio-text">16+</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Would you consider paying for a platform that simplifies sourcing, 3D rendering, and client management?</label>
+                                        <div class="radio-group">
+                                            <label><input type="radio" name="Designer - Willing to Pay" value="Yes"><span class="radio-text">Yes</span></label>
+                                            <label><input type="radio" name="Designer - Willing to Pay" value="No"><span class="radio-text">No</span></label>
+                                            <label><input type="radio" name="Designer - Willing to Pay" value="Maybe"><span class="radio-text">Maybe</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Which of these features would be most valuable to you?</label>
+                                        <div class="radio-group">
+                                            <label><input type="radio" name="Designer - Valuable Feature" value="3D Visuals"><span class="radio-text">Fast, high-quality 3D Visuals</span></label>
+                                            <label><input type="radio" name="Designer - Valuable Feature" value="Product Library"><span class="radio-text">A library of real, sourceable products</span></label>
+                                            <label><input type="radio" name="Designer - Valuable Feature" value="Client Delivery"><span class="radio-text">A professional client portal</span></label>
+                                            <label><input type="radio" name="Designer - Valuable Feature" value="Project Tracking"><span class="radio-text">An all-in-one project tracker</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="designer-challenge">What is your single biggest challenge when managing a design project?</label>
+                                        <textarea id="designer-challenge" name="Designer - Biggest Challenge"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Questions for Vendors -->
+                                <div id="vendor-questions" class="conditional-group">
+                                    <div class="form-group">
+                                        <label>What category of products do you supply?</label>
+                                        <div class="radio-group">
+                                            <label><input type="radio" name="Vendor - Product Category" value="Furniture"><span class="radio-text">Furniture</span></label>
+                                            <label><input type="radio" name="Vendor - Product Category" value="Decor & Accessories"><span class="radio-text">Decor & Accessories</span></label>
+                                            <label><input type="radio" name="Vendor - Product Category" value="Lighting"><span class="radio-text">Lighting</span></label>
+                                            <label><input type="radio" name="Vendor - Product Category" value="Other"><span class="radio-text">Other</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Would you be interested in listing your products on a platform used by professional designers?</label>
+                                        <div class="radio-group">
+                                            <label><input type="radio" name="Vendor - Willing to List" value="Yes"><span class="radio-text">Yes, definitely</span></label>
+                                            <label><input type="radio" name="Vendor - Willing to List" value="Maybe"><span class="radio-text">Maybe, I'd like more info</span></label>
+                                            <label><input type="radio" name="Vendor - Willing to List" value="No"><span class="radio-text">No</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vendor-challenge">What is your biggest challenge in connecting with and selling to interior designers?</label>
+                                        <textarea id="vendor-challenge" name="Vendor - Biggest Challenge"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <!-- Field for Others -->
+                                <div id="other-questions" class="conditional-group">
+                                    <div class="form-group">
+                                        <label for="other-interest">Please tell us a bit about your interest in Design & Cart.</label>
+                                        <textarea id="other-interest" name="Other - Interest"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary back-btn">← Back</button>
+                                    <button type="submit" class="btn form-submit-btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div id="confirmation-message">
+                            <p>Thank you for your interest! We've received your submission and will be in touch soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1.5fr 1fr; gap: 3rem;">
+                <!-- Column 1: Brand Info -->
+                <div class="footer-col">
+                    <img src="images/logo-main.png" alt="Design & Cart Logo" class="footer-logo" style="max-width: 180px; margin-bottom: 1.5rem;">
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">The all-in-one workspace for interior designers, simplifying the journey from 3D concept to final delivery.</p>
+                    <div class="footer-social" style="margin-top: 1.5rem;">
+                        <a href="https://www.linkedin.com/company/designandcart" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h5 style="font-size: 1rem; margin-bottom: 1.25rem; color: var(--secondary-color); font-weight: 600;">Quick Links</h5>
+                    <ul class="footer-links" style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.75rem;"><a href="index.html" style="color: var(--text-muted); transition: color 0.2s;">Home</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="how-it-works.html" style="color: var(--text-muted); transition: color 0.2s;">How It Works</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="features.html" style="color: var(--text-muted); transition: color 0.2s;">Features</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="contact.html" style="color: var(--text-muted); transition: color 0.2s;">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact -->
+                <div class="footer-col">
+                    <h5 style="font-size: 1rem; margin-bottom: 1.25rem; color: var(--secondary-color); font-weight: 600;">Get in Touch</h5>
+                    <div class="footer-contact" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">General Inquiries</p>
+                            <p style="margin: 0;"><a href="mailto:contact@designandcart.in" style="color: var(--primary-color); font-weight: 500;">contact@designandcart.in</a></p>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">Partnerships</p>
+                            <p style="margin: 0;"><a href="mailto:partners@designandcart.in" style="color: var(--primary-color); font-weight: 500;">partners@designandcart.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 4: App Link -->
+                <div class="footer-col">
+                    <h5 style="font-size: 1rem; margin-bottom: 1.25rem; color: var(--secondary-color); font-weight: 600; text-align: center;">Ready to Start?</h5>
+                    <a href="https://design-cart.vercel.app/" target="_blank" class="btn" style="display: block; text-align: center; padding: 1rem 2rem; font-size: 1rem; border-radius: 50px; background: var(--primary-color); color: white; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Launch App</a>
+                </div>
+            </div>
+            <div class="footer-bottom" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line-color); text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.875rem;">&copy; 2025 Design & Cart. Built for the modern interior designer.</p>
+                <p style="color: var(--text-muted); font-size: 0.75rem; margin-top: 1rem; line-height: 1.5; max-width: 900px; margin-left: auto; margin-right: auto;">* Some features and functionality shown on this website are currently in development or planned for future release. Descriptions represent our product roadmap and vision. Actual features, availability, pricing, and implementation may vary. Design & Cart reserves the right to modify or discontinue features at any time without prior notice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
